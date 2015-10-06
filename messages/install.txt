@@ -6,6 +6,9 @@ You're one step closer to having your .TEX files save and build automatically af
 
 Documentation
 =============
+The plugin requires a Latex build package previously installed in Sublime.
+We used LaTexTools: https://github.com/SublimeText/LaTeXTools.
+
 The plugin is dead simple. When auto_save_latex turned on, the current .TEX file you are viewing will
 save automatically as you modify it. In other words, the file saves after every keystroke.
 When auto_build_latex turned on, the current .TEX file you are viewing will

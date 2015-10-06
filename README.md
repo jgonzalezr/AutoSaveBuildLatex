@@ -9,7 +9,7 @@ A [Sublime Text](http://www.sublimetext.com/) plugin that **automatically saves 
 
 Synopsis
 -------
-AutoSaveBuild is a  Sublime Text package to automatically save or build the current .TEX file after
+AutoSaveBuild is a  Sublime Text plugin package to automatically save or build the current .TEX file after
 each change.
 
 
@@ -25,13 +25,14 @@ directory under Sublime Text's data directory:
 On Mac:
 
 ```
-cd ~/Library/Application Support/Sublime Text 3/Packages
-git clone https://github.com/jgonzalezr/auto-save-build-latex.git
+cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+git clone https://github.com/jgonzalezr/AutoSaveBuildLatex.git
 ```
 
 Usage
 -------
 **By default, AutoSaveBuildLatex is disabled** because it is a fairly invasive plugin.
+
 To enable it, you must first bind the command to turn the plugin save and build
 on or off. Open "Preferences / Key Bindings - User" and add:
 

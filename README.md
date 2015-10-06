@@ -16,9 +16,6 @@ each change.
 Installation
 -------
 AutoSaveBuildLatex requires [LaTeXTools](https://github.com/SublimeText/LaTeXTools) package installation.
-#### From Package Control
-AutoSaveBuildLatex is available through [Sublime Package Control](https://sublime.wbond.net/packages/AutoSaveBuildLatex)
-and is the recommended way to install.
 
 #### From Github
 Alternatively, you may install via GitHub by cloning this repository into the `Packages`

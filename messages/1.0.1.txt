@@ -1,4 +1,0 @@
-Fixes:
-
-* Don't try to save files that don't exist yet. Thanks to https://github.com/jisaacks
-

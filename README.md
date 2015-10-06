@@ -1,27 +1,23 @@
-auto-save
+AutoSaveBuildLatex
 ===============
-A [Sublime Text](http://www.sublimetext.com/) plugin that **automatically saves the current file after every modification**.
+A [Sublime Text](http://www.sublimetext.com/) plugin that **automatically saves and build the current TEX file after every modification**.
 
 - [Synopsis](#synopsis)
-- [Demo](#demo)
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
 - [Author](#author)
 
 Synopsis
 -------
-In the occasion where you'd want Sublime Text to save the current file after
-each change, you can use this plugin.
+AutoSaveBuild is a  Sublime Text package to automatically save or build the current .TEX file after
+each change.
 
-Demo
--------
-![Image](https://github.com/jamesfzhang/auto-save/blob/master/demo.gif?raw=true)
 
 Installation
 -------
+AutoSaveBuildLatex requires [LaTeXTools](https://github.com/SublimeText/LaTeXTools) package installation.
 #### From Package Control
-auto-save is available through [Sublime Package Control](https://sublime.wbond.net/packages/auto-save)
+AutoSaveBuildLatex is available through [Sublime Package Control](https://sublime.wbond.net/packages/AutoSaveBuildLatex)
 and is the recommended way to install.
 
 #### From Github
@@ -32,32 +28,35 @@ On Mac:
 
 ```
 cd ~/Library/Application Support/Sublime Text 3/Packages
-git clone https://github.com/jamesfzhang/auto-save.git
+git clone https://github.com/jgonzalezr/auto-save-build-latex.git
 ```
 
 Usage
 -------
-**By default, auto-save is disabled** because it is a fairly invasive plugin.
-To enable it, you must first bind the command to turn the plugin
+**By default, AutoSaveBuildLatex is disabled** because it is a fairly invasive plugin.
+To enable it, you must first bind the command to turn the plugin save and build
 on or off. Open "Preferences / Key Bindings - User" and add:
 
 ```js
-{ "keys": ["ctrl+shift+s"], "command": "auto_save" }
+{ "keys": ["ctrl+shift+s"], "command": "auto_save_latex" }
 ```
+```js
+{ "keys": ["ctrl+shift+s"], "command": "auto_build_latex" }
+```
+
 This key bindings file takes an array of key bindings so please ensure that this key binding, along with any existing ones, are properly wrapped in `[]`.
 
-With this setting, pressing <kbd>Ctrl + Shift + S</kbd> will turn the plugin
-on or off. A status message will be displayed in the Sublime Status Bar each
-time the plugin is turned on or off.
+With these setting, pressing <kbd>Ctrl + Shift + S</kbd> will turn the auto_save_latex plugin
+on or off. 
+Pressing <kbd>Ctrl + Shift + B</kbd> will turn the auto_build_latex plugin
+on or off. 
+**If you do not want to compile the .TEX file after each change leave the auto_build_latex 
+plugin disabled.**
+A status message will be displayed in the Sublime Status Bar each
+time a plugin is turned on or off.
 
-By default, auto-save debounces "save" events by 1 second. For fast typers, this improves
-performance dramatically such that "save" events are not called constantly, just when it matters.
-
-License
--------
-[MIT-License](https://raw.github.com/jamesfzhang/auto-save/master/MIT-License).
+By default, auto-save-build-latex debounces "save" and "build" events by 1 second. 
 
 Author
 -------
-auto-save was created and maintained by James Zhang. Give him a shoutout at [@jamesfzhang](https://twitter.com/jamesfzhang)
-if you have comments or questions.
+AutoSaveBuild was created by Jorge Gonzalez based on [auto-save](https://packagecontrol.io/packages/auto-save) by James Zhang.

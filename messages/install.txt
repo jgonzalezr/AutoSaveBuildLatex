@@ -1,22 +1,26 @@
-Thank you for installing AutoSave
+Thank you for installing AutoSaveBuildLatex
 ----------------------------------------
 
-You're one step closer to having your files save automatically after every modification!
+You're one step closer to having your .TEX files save and build automatically after every modification!
 
 
 Documentation
 =============
-The plugin is dead simple. When turned on, the current file you are viewing will
+The plugin is dead simple. When auto_save_latex turned on, the current .TEX file you are viewing will
 save automatically as you modify it. In other words, the file saves after every keystroke.
+When auto_build_latex turned on, the current .TEX file you are viewing will
+automatically be compiled as you modify it. In other words, the file is build after every keystroke.
 The plugin is turned off by default since it is so invasive. You may enable it by adding
-a key binding to the "auto_save" command in "Preferences / Key Bindings - User", for example:
+a key binding to the "auto_save_latex" and "auto_build_latex" command in "Preferences / Key Bindings - User", for example:
 
-{ "keys": ["ctrl+shift+s"], "command": "auto_save" }
+{ "keys": ["ctrl+shift+s"], "command": "auto_save_latex" }
+
+{ "keys": ["ctrl+shift+s"], "command": "auto_build_latex" }
+
 
 See links below for more help.
 
 Useful Links
 ============
-* Documentation & Code: https://github.com/jamesfzhang/auto-save
-* Report issues: https://github.com/jamesfzhang/auto-save/issues
-* Follow me on Twitter: @jamesfzhang
+* Documentation & Code: https://github.com/jgonzalezr/auto-save-build-latex
+* Report issues: https://github.com/jgonzalezr/auto-save-build-latex/issues

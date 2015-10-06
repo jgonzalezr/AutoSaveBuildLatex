@@ -1,12 +1,12 @@
 {
-  "schema_version": "2.0",
+  "schema_version": "1.0.0",
   "packages": [
     {
-      "details": "https://github.com/jamesfzhang/auto-save",
+      "details": "https://github.com/jgonzalezr/AutoSaveBuildLatex",
       "releases": [
         {
           "sublime_text": "*",
-          "details": "https://github.com/jamesfzhang/auto-save/tags"
+          "details": "https://github.com/jgonzalezr/AutoSaveBuildLatex/tags"
         }
       ]
     }

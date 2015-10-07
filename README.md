@@ -40,7 +40,7 @@ on or off. Open "Preferences / Key Bindings - User" and add:
 { "keys": ["ctrl+shift+s"], "command": "auto_save_latex" }
 ```
 ```js
-{ "keys": ["ctrl+shift+s"], "command": "auto_build_latex" }
+{ "keys": ["ctrl+shift+b"], "command": "auto_build_latex" }
 ```
 
 This key bindings file takes an array of key bindings so please ensure that this key binding, along with any existing ones, are properly wrapped in `[]`.
@@ -48,11 +48,11 @@ This key bindings file takes an array of key bindings so please ensure that this
 With these setting, pressing <kbd>Ctrl + Shift + S</kbd> will turn the auto_save_latex plugin
 on or off. 
 Pressing <kbd>Ctrl + Shift + B</kbd> will turn the auto_build_latex plugin
-on or off. 
-**If you do not want to compile the .TEX file after each change leave the auto_build_latex 
-plugin disabled.**
+on or off.
 A status message will be displayed in the Sublime Status Bar each
 time a plugin is turned on or off.
+
+**If you do not want to build the .TEX file after each change leave the auto_build_latex plugin 'off'.**
 
 By default, auto-save-build-latex debounces "save" and "build" events by 1 second. 
 

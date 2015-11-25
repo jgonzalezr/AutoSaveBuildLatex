@@ -1,0 +1,7 @@
+// AutoSaveBuildLatex's default settings.
+
+{
+  "auto_save_latex_on_modified": false,
+  "auto_build_latex_on_modified": false,
+  "auto_save_latex_delay_in_seconds": 1
+}
